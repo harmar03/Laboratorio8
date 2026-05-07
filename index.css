@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
+  font-size: 1rem;
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: #888;
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 8px;
+  list-style: none;
+  z-index: 10;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-results.hidden {
+  display: none;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.search-result:hover {
+  background: #2a2a2a;
+}
+
+.search-result img {
+  width: 36px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.poster {
+  width: 210px;
+  border-radius: 8px;
+}
+
+.episodes {
+  display: grid;
+  place-items: start;
+  place-content: center;
+}
+
+.season {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.season-header,
+.episode {
+  --size: 2rem;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color);
+  display: grid;
+  place-items: center;
+  margin: 2px;
+  border-radius: 25px;
+  corner-shape: squircle;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.season-header {
+  --color: #444;
+  font-size: 0.6rem;
+}
+
+.rating-0  { --color: #2b0a27 }
+.rating-1  { --color: #451010 }
+.rating-2  { --color: #922323 }
+.rating-3  { --color: #c53030 }
+.rating-4  { --color: #c53030 }
+.rating-5  { --color: #c53030 }
+.rating-6  { --color: #dd6b20 }
+.rating-7  { --color: #f6e05e; color: #333 }
+.rating-8  { --color: #48bb78 }
+.rating-9  { --color: #2f855a }
+.rating-10 { --color: #4CAF50 }
