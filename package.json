@@ -1,13 +1,12 @@
 {
-  "name": "laboratorio8",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "vite": "^6.0.0"
-  }
+	"scripts": {
+		"dev": "servor src/ index.html 1234 --reload",
+		"deploy": "gh-pages -d src/"
+	},
+	"dependencies": {
+		"servor": "^4.0.2"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.3.0"
+	}
 }
