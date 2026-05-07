@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\Users\\\\marti\\\\multimedios\\\\Laboratorio8\\\\src\\\\services\" -Force)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\marti\\\\multimedios\\\\Laboratorio8\\\\src\" -Recurse | Where-Object { !$_.PSIsContainer })"
+    ]
+  }
+}
